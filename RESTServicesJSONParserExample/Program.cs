@@ -28,7 +28,7 @@ namespace RESTServicesJSONParserExample
         {
             string UrlRequest = "http://dev.virtualearth.net/REST/v1/Locations/" +
                                  queryString +
-                                 "?output=xml" +
+                                 "?output=json" +
                                  " &key=" + BingMapsKey;
             return (UrlRequest);
         }

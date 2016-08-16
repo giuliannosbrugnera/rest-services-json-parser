@@ -23,5 +23,14 @@ namespace RESTServicesJSONParserExample
             }
 
         }
+
+        public static string CreateRequest(string queryString)
+        {
+            string UrlRequest = "http://dev.virtualearth.net/REST/v1/Locations/" +
+                                 queryString +
+                                 "?output=xml" +
+                                 " &key=" + BingMapsKey;
+            return (UrlRequest);
+        }
     }
 }
